@@ -4,7 +4,6 @@ import { Component, VERSION } from '@angular/core';
   selector: 'my-app',
   template:
     '<h1 (click)="clickHandler($event)"> Hello World</h1><input type="text" (keydown)="inputHandler($event)">',
-
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
@@ -14,5 +13,11 @@ export class AppComponent {
   }
   inputHandler(event: KeyboardEvent) {
     console.log('press');
+  }
+  fun(){
+    alert("ciao io sono il click");
+  }
+  dblFun(){
+    alert("ciao io sono il doppio click");
   }
 }
