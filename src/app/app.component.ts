@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { timeout } from 'rxjs/operators';
 
 @Component({
   selector: 'my-app',
@@ -10,8 +11,10 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
   clickHandler(event: MouseEvent) {
     console.log('click');
+    this.fun();
   }
   inputHandler(event: KeyboardEvent) {
+    this.dblFun();
     console.log('press');
   }
   fun(){
