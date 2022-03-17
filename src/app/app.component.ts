@@ -11,16 +11,18 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
   clickHandler(event: MouseEvent) {
     console.log('click');
+    console.log(MouseEvent);
     this.fun();
   }
   inputHandler(event: KeyboardEvent) {
-    this.dblFun();
     console.log('press');
+    console.log(KeyboardEvent);
+    this.dblFun();
   }
-  fun(){
-    alert("ciao io sono il click");
+  fun() {
+    alert('ciao io sono il click');
   }
-  dblFun(){
-    alert("ciao io sono il doppio click");
+  dblFun() {
+    alert('ciao io sono il doppio click');
   }
 }
